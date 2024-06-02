@@ -1,0 +1,20 @@
+2024-05-21T10:47:22.779670600 : Server started.
+2024-05-21T10:47:49.279969700 : 0:0:0:0:0:0:0:1 requested GET /
+2024-05-21T10:47:49.461621 : 0:0:0:0:0:0:0:1 requested GET /favicon.ico
+2024-05-21T10:48:02.892180200 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:29.408011100 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:29.557106400 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:29.706126900 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:29.853703500 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:30.021725900 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:30.171722300 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:30.313725200 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:30.575723300 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:30.576724500 : 0:0:0:0:0:0:0:1 Too Many Requests 429 GET /test.html
+2024-05-21T10:48:30.746726 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:30.747723900 : 0:0:0:0:0:0:0:1 Too Many Requests 429 GET /test.html
+2024-05-21T10:48:30.896724100 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:30.897731100 : 0:0:0:0:0:0:0:1 Too Many Requests 429 GET /test.html
+2024-05-21T10:48:50.215043900 : IP blacklisted: 0:0:0:0:0:0:0:1
+2024-05-21T10:48:52.855177500 : 0:0:0:0:0:0:0:1 requested GET /test.html
+2024-05-21T10:48:52.856177500 : Connection attempt from blacklisted IP: 0:0:0:0:0:0:0:1

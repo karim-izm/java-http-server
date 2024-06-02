@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="799.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ssi.master.javahttpserver.controllers.HomeController">
+   <children>
+      <Button fx:id="startButton" layoutX="14.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleOpenServer" style="-fx-background-color: #CADCFC; -fx-background-radius: 10; -fx-border-color: #00246B; -fx-border-radius: 10;" text="Open Server" />
+      <Button fx:id="stopButton" layoutX="108.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleStopServer" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #CADCFC; -fx-background-radius: 10; -fx-border-color: #00246B; -fx-border-radius: 10;" text="Stop Server" />
+      <Label fx:id="serverStatus" layoutX="34.0" layoutY="111.0" text="Server Status : OFFLINE" />
+      <Button layoutX="622.0" layoutY="97.0" mnemonicParsing="false" onAction="#handleOpenFile" style="-fx-background-color: #CADCFC; -fx-background-radius: 10; -fx-border-color: #00246B; -fx-border-radius: 10;" text="Open File" />
+      <TextArea fx:id="logTextArea" layoutX="14.0" layoutY="239.0" prefHeight="146.0" prefWidth="439.0" />
+      <Label layoutX="204.0" layoutY="221.0" text="Server Logs" />
+      <AnchorPane layoutX="14.0" layoutY="-86.0" prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #00246B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="logo" fitHeight="51.0" fitWidth="123.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/ensa-logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="332.0" layoutY="15.0" text="HTTP SERVER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="758.0" layoutY="13.0" prefWidth="26.0" text="SSI" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="575.0" layoutY="73.0" text="Add An Htm File To The Server" />
+      <Label fx:id="serverIp" layoutX="34.0" layoutY="142.0" text="Server Ip : ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="serverPort" layoutX="34.0" layoutY="174.0" text="Server Port : ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="exportLogs" layoutX="194.0" layoutY="399.0" mnemonicParsing="false" onAction="#handleExportLogs" style="-fx-background-color: #CADCFC; -fx-background-radius: 10; -fx-border-color: #00246B; -fx-border-radius: 10;" text="Export Logs" />
+      <ListView fx:id="fileListView" layoutX="557.0" layoutY="199.0" onMouseClicked="#handleFileListViewClicked" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="584.0" layoutY="174.0" text="Web Pages On The Server : " />
+      <ListView fx:id="blacklistView" layoutX="204.0" layoutY="503.0" prefHeight="82.0" prefWidth="200.0" />
+      <Label layoutX="274.0" layoutY="485.0" text="The Black List" />
+      <TextField fx:id="ipTextField" layoutX="500.0" layoutY="531.0" prefHeight="26.0" prefWidth="175.0" promptText="Enter an ip adresse to blacklist" />
+      <Button layoutX="545.0" layoutY="565.0" mnemonicParsing="false" text="Black List Ip" onAction="#handleBlacklistIp" />
+   </children>
+</AnchorPane>
